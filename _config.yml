@@ -29,13 +29,14 @@ twitter_username: zilasino
 github_username:  zilton7
 
 # Build settings
-theme: jekyll-theme-minimal
+remote_theme: pages-themes/architect@v0.2.0
 
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
-sass:
-  quiet_deps: true
+# sass:
+#   quiet_deps: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
