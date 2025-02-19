@@ -29,14 +29,28 @@ twitter_username: zilasino
 github_username:  zilton7
 
 # Build settings
-remote_theme: pages-themes/architect@v0.2.0
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: dark
 
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
+  - jekyll-include-cache
+  
+sass:
+  quiet_deps: true
 
-# sass:
-#   quiet_deps: true
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
