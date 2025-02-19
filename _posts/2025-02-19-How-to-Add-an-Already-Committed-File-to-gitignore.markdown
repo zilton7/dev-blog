@@ -1,35 +1,33 @@
 ---
-layout: home
-title:  "How to Add an Already Committed File to Gitignore"
-date:   2025-02-20 18:31:10 +0200
+title:  How to Add an Already Committed File to Gitignore
+layout: posts
 categories: git github
 ---
+If you've already committed a file to Git and want to add it to `.gitignore`, follow these steps.
 
-## How to Add an Already Committed File to `.gitignore`
+![Cover Image of the Article]({{ site.url }}{{ site.baseurl }}/assets/images/2025-02-19-How-to-Add-an-Already-Committed-File-to-gitignore/main_image.png)
 
-If you've already committed a file to Git and want to add it to `.gitignore`, follow these steps:
-
-1. **Add the file to `.gitignore`**  
+## 1. Add the file to `.gitignore`  
    Open your `.gitignore` file (or create one if it doesn't exist) and add the file or directory you want to ignore. For example:
 
 ```bash
 path/to/file.txt
 ```
 
-2. **Remove the file from Git's tracking**
+## 2. Remove the file from Git's tracking
 To stop Git from tracking the file (but not delete it from your filesystem), run:
 
 ```bash
 git rm --cached path/to/file.txt
 ```
 
-3. **Commit the change**
+## 3. Commit the change
 Commit the change to remove the file from version control:
 ```bash
 git commit -m "Stop tracking file.txt and add it to .gitignore"
 ```
 
-4. **Push the changes**
+## 4. Push the changes
 Finally, push the changes to your remote repository:
 ```bash
 git push
