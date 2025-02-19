@@ -2,13 +2,6 @@
 title: How to Install AUR Packages on Manjaro
 layout: posts
 categories: rails stimulus
-toc: true
-# layout: single
-author_profile: true
-# read_time: true
-# comments: true
-# share: true
-# related: true
 ---
 Manjaro, based on Arch Linux, supports the Arch User Repository (AUR). Below are the steps to install AUR packages on Manjaro.
 
