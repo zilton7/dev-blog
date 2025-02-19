@@ -1,14 +1,15 @@
 ---
 layout: post
+type: post
 categories: rails stimulus
 author: Zil Norvilis
-toc: true
-layout: single
-author_profile: true
-read_time: true
-comments: true
-share: true
-related: true
+# toc: true
+# layout: single
+# author_profile: true
+# read_time: true
+# comments: true
+# share: true
+# related: true
 ---
 
 ![Manjaro Desktop]({{ site.url }}{{ site.baseurl }}/assets/images/2025-02-19-How-to-Install-AUR-Packages-on-Manjaro/manjaro-kde.png)

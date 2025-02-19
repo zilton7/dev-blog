@@ -41,7 +41,7 @@ sass:
 
 defaults:
   - scope:
-      path: ""
+      path: "_posts"
       type: posts
     values:
       layout: single
