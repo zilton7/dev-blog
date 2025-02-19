@@ -1,21 +1,18 @@
 ---
-layout: post
-type: post
+title: How to Install AUR Packages on Manjaro
+layout: posts
 categories: rails stimulus
-author: Zil Norvilis
-# toc: true
+toc: true
 # layout: single
-# author_profile: true
+author_profile: true
 # read_time: true
 # comments: true
 # share: true
 # related: true
 ---
-
-![Manjaro Desktop]({{ site.url }}{{ site.baseurl }}/assets/images/2025-02-19-How-to-Install-AUR-Packages-on-Manjaro/manjaro-kde.png)
-
 Manjaro, based on Arch Linux, supports the Arch User Repository (AUR). Below are the steps to install AUR packages on Manjaro.
 
+![Manjaro Desktop]({{ site.url }}{{ site.baseurl }}/assets/images/2025-02-19-How-to-Install-AUR-Packages-on-Manjaro/manjaro-kde.png)
 
 ---
 
@@ -39,9 +36,10 @@ An AUR helper simplifies the process of installing and managing AUR packages. So
 
 To install `yay`, run:
 
-```bash
+{% highlight bash %}
 sudo pacman -S yay
-```
+{% endhighlight %}
+
 
 ## 3. Install AUR Packages
 

@@ -29,7 +29,7 @@ twitter_username: zilasino
 github_username:  zilton7
 
 # Build settings
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 minimal_mistakes_skin: dark
 
 plugins:
@@ -41,7 +41,7 @@ sass:
 
 defaults:
   - scope:
-      path: "_posts"
+      path: ''
       type: posts
     values:
       layout: single
