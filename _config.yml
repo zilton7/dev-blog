@@ -35,6 +35,7 @@ minimal_mistakes_skin: dark
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-archives
 
 defaults:
   - scope:
@@ -48,10 +49,15 @@ defaults:
       share: true
       related: true
       toc: true
+      enable_copy_code_button: true
+      tags: true
 
-
-enable_copy_code_button: true
-
+jekyll-archives:
+  enabled: [tags]
+  layouts:
+    tag: archive-taxonomy
+  permalinks:
+    tag: /tags/:name/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

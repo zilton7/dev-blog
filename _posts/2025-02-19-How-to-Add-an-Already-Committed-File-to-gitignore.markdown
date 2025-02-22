@@ -1,7 +1,6 @@
 ---
 title:  How to Add an Already Committed File to Gitignore
-layout: posts
-categories: git github
+tags: [git, github, selfnote]
 ---
 If you've already committed a file to Git and want to add it to `.gitignore`, follow these steps.
 
