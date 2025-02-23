@@ -1,0 +1,13 @@
+---
+layout: archive
+title: "Posts by Tag"
+permalink: /tags/
+author_profile: true
+---
+<ul>
+    {% for tag in site.tags %}
+    <li>
+        <a href="{{ tag[0] | slugify }}">{{ tag[0] }}</a> ({{ tag[1].size }})
+    </li>
+    {% endfor %}
+</ul>

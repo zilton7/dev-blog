@@ -36,6 +36,10 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-archives
+  - jekyll-tagging
+
+tag_page_layout: tag_page
+tag_page_dir: tags
 
 defaults:
   - scope:
@@ -50,14 +54,6 @@ defaults:
       related: true
       toc: true
       enable_copy_code_button: true
-      tags: true
-
-jekyll-archives:
-  enabled: [tags]
-  layouts:
-    tag: archive-taxonomy
-  permalinks:
-    tag: /tags/:name/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
