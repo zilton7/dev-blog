@@ -38,15 +38,31 @@ plugins:
   - jekyll-archives
   - jekyll-tagging
 
-tag_page_layout: tag_page
-tag_page_dir: tags
+author:
+  name: "Zil Norvilis"
+  avatar: "https://avatars.githubusercontent.com/u/38778743?v=4" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: "Full-Stack Developer with a love for Ruby on Rails (Hotwire stack)"
+  email:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:zil.norvilis@gmail.com"
+    - label: "X.com"
+      icon: "fa-brands fa-x-twitter"
+      url: "https://x.com/zilasino"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zilton7"
+    - label: "LinkedIn"
+      icon: "fa-brands fa-linkedin"
+      url: "https://www.linkedin.com/in/zil-norvilis/"
 
 defaults:
   - scope:
       path: ''
       type: posts
     values:
-      layout: posts
+      layout: single
       author_profile: true
       read_time: true
       comments: true
@@ -55,11 +71,20 @@ defaults:
       toc: true
       enable_copy_code_button: true
 
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
 jekyll-archives:
-  enabled: [categories, tags]
+  enabled:
+    - categories
+    - tags
   layouts:
-    category: category
-    tag: tag
+    category: archive-taxonomy
+    tag: archive-taxonomy
   permalinks:
-    tag: /tags/:name/
     category: /categories/:name/
+    tag: /tags/:name/
